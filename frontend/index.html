@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Web3 Access Control</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.8.2/dist/web3.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Web3 Access Portal</h1>
+      <p id="networkIndicator" class="network-indicator">Not Connected</p>
+    </header>
+    
+    <div class="content">
+      <!-- Wallet Connection Card -->
+      <div class="card">
+        <h2>🔐 Wallet Connection</h2>
+        <button id="connectWallet" class="btn">Connect MetaMask</button>
+        <div id="walletStatus" class="hidden">
+          <p>Connected Wallet: <span id="walletAddress" class="address"></span></p>
+          <p>Network: <span id="network"></span></p>
+          <button id="switchNetwork" class="btn-secondary">Switch to Polygon</button>
+        </div>
+      </div>
+      
+      <!-- Token Management Card -->
+      <div class="card">
+        <h2>🪙 Token Management</h2>
+        <div class="balance-display">
+          <span>Your Balance:</span>
+          <span id="tokenBalance">0</span>
+          <span>TOK</span>
+        </div>
+        <button id="getToken" class="btn" disabled>Get 1000 Test Tokens</button>
+        <button id="upgradeAccess" class="btn" disabled>Upgrade Access Level</button>
+      </div>
+      
+      <!-- Transfer Card -->
+      <div class="card">
+        <h2>↗️ Token Transfer</h2>
+        <div class="form-group">
+          <label for="recipientAddress">Recipient Address:</label>
+          <input type="text" id="recipientAddress" placeholder="0x...">
+        </div>
+        <div class="form-group">
+          <label for="tokenAmount">Amount:</label>
+          <input type="number" id="tokenAmount" placeholder="10">
+        </div>
+        <button id="sendTokens" class="btn" disabled>Send Tokens</button>
+        <div id="transactionStatus"></div>
+      </div>
+      
+      <!-- Access Control Card -->
+      <div class="card">
+        <h2>🛡️ Access Control</h2>
+        <div class="access-level">
+          <span>Your Access Level:</span>
+          <span id="accessLevel">None</span>
+        </div>
+        <button id="checkAccess" class="btn" disabled>Check Access Status</button>
+        <div id="accessStatus"></div>
+      </div>
+      
+      <!-- Admin Panel (Conditional) -->
+      <div id="adminPanel" class="card hidden">
+        <h2>👑 Admin Panel</h2>
+        <div class="form-group">
+          <label for="mintAmount">Mint Tokens:</label>
+          <input type="number" id="mintAmount" placeholder="1000">
+        </div>
+        <button id="mintTokens" class="btn-admin">Mint</button>
+        <div class="form-group">
+          <label for="newAdmin">Add Admin:</label>
+          <input type="text" id="newAdmin" placeholder="0x...">
+        </div>
+        <button id="addAdmin" class="btn-admin">Grant Admin</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
