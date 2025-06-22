@@ -175,4 +175,5 @@ Developed as an experimental dApp prototype to showcase the power of decentraliz
 ![Image](https://github.com/user-attachments/assets/19725932-f2d0-4365-89ef-3000013b902e)
 ![Image](https://github.com/user-attachments/assets/172a2752-1c07-46c3-8cd3-c827e23b97fe)
 
+## Presentation Link: https://www.canva.com/design/DAGrEL1eoLU/T5-etLF3FaZwWkBL8nsRsg/view?utm_content=DAGrEL1eoLU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7f9a3cf6aa
   
