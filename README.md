@@ -170,23 +170,8 @@ MIT License
 ## Credits
 
 Developed as an experimental dApp prototype to showcase the power of decentralized identity and token-based access control. Inspired by Web3 community projects, DAO mechanics, and blockchain authentication systems.
-
-## Ekler
-
-Herhangi bir ek bilgi buraya gelir
-
-  
-## Yükleme 
-
-benim-projem'i npm kullanarak yükleyin
-
-```bash 
-  npm install my-project
-  cd my-project
-```
     
-## Ekran Görüntüleri
-
-![Uygulama Ekran Görüntüsü](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+## Screenshot
+![Image](https://github.com/user-attachments/assets/19725932-f2d0-4365-89ef-3000013b902e)
 
   
